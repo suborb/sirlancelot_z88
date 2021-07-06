@@ -31,24 +31,24 @@ As a result, the version has been bumped.
 
 The preset keys are:
 
-Left    - O
-Right   - P
-Jump    - Space
-Pause   - H
+* Left    - O
+* Right   - P
+* Jump    - Space
+* Pause   - H
 
 These movement keys can be redefined to suit your playing style/hand size!
 
 There is also a set of control keys which cannot be redefined:
 
-ESC     - Quit back to intro from game
-TAB     - Toggle screen size - mini/standard
-DEL     - Toggle inverse background
+* ESC     - Quit back to intro from game
+* TAB     - Toggle screen size - mini/standard
+* DEL     - Toggle inverse background
 
 Sir Lancelot is quite a noisy game, with music and sound effects, these
 may be toggled on or off by using the Sound setting from the panel - this
 can be set at anytime and it will be immediately obeyed.
 
-## Acknowledgements
+## Acknowledgements
 
 Sir Lancelot was original written by Stephen Cargill and published by
 Melbourne House.

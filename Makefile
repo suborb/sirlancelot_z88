@@ -14,12 +14,13 @@ romhdr.bin: romhdr.asm
 %.o: %.asm
 	zcc +z88 -c $^
 
-lancelot.63: rompacker lancelot.bin romhdr.bin
-	./rompacker $@ 16384 lancelot.bin:53000 assets/lance_rom.scr:58180 assets/lance_rom.dat:59200 romhdr.bin:65472
+lancelot.63: util/rompacker lancelot.bin romhdr.bin
+	util/rompacker $@ 16384 lancelot.bin:53000 assets/lance_rom.scr:58180 assets/lance_rom.dat:59200 romhdr.bin:65472
 
-rompacker: rompacker.c
-	$(CC) -o $@  $^
+util/rompacker:
+	$(MAKE) -C util
 
 clean:
-	$(RM) -f *.o lancelot.bin romhdr.bin lancelot.63 rompacker
+	$(RM) -f *.o lancelot.bin romhdr.bin lancelot.63 rompacker lancelot.app
+	$(MAKE) -C util clean
 	
